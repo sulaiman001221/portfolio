@@ -37,27 +37,84 @@
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              Hello, I'm Sulaiman Ndlovu, a dedicated web developer passionate
-              about translating ideas into captivating digital experiences.
-              Armed with a degree in Public Administration from the University
-              of Pretoria, my journey into web development has been fueled by a
-              year of freelancing, specializing in crafting Shopify stores.
-              Proficient in HTML, CSS, and JavaScript, I believe in a holistic
-              approach to development, collaborating closely with clients to
-              exceed expectations. I thrive on problem-solving and embrace
-              challenges as opportunities for innovation. Let's connect and
-              explore the possibilities of bringing your digital visions to
+              Hello, I'm Sulaiman Ndlovu, a passionate and dedicated web
+              developer with a flair for creating dynamic and user-friendly
+              websites. My journey into the world of web development began with
+              a solid foundation in HTML, CSS, and JavaScript, and it has since
+              evolved into a rewarding career where I bring digital visions to
               life.
             </p>
 
-            <div class="tab-title">
-                <p class="tab-links">Skills</p>
-                <p class="tab-links">Background</p>
-                <p class="tab-links">Education</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('background')">
+                Background
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tap-contents active-tab" id="skills">
+              <p>
+                I thrive on turning ideas into reality through clean and
+                efficient code. My technical toolkit includes proficiency in
+                <span>HTML5, CSS3, JavaScript (ES6)</span>, and
+                <span>Shopify</span> development, with a strong emphasis on
+                creating seamless user experiences. Leveraging
+                <span>Git</span> and <span>GitHub</span> for version control, I
+                ensure organized and collaborative code management. Committed to
+                staying ahead in this fast-paced industry, I am dedicated to
+                continuous learning and exploration of new technologies to
+                enhance my capabilities.
+              </p>
+            </div>
+
+            <div class="tap-contents" id="background">
+              <p>
+                I found my true calling in the ever-evolving realm of web
+                development. Over the past year, I've been on a freelancing
+                adventure, specializing in crafting Shopify stores for clients.
+                This experience has not only honed my technical skills but also
+                taught me the importance of effective communication and
+                collaboration in delivering successful projects.
+              </p>
+            </div>
+
+            <div class="tap-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023 - current</span><br />Web Development (Umuzi)
+                </li>
+                <li>
+                  <span>2020 - 2022</span><br />Bachelor's of Administration
+                  (University of Preroria)
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-------------------services------------------>
+    
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tap-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+      }
+    </script>
   </body>
 </html>
