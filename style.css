@@ -13,7 +13,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(Images/background.png);
+  background-image: url(Images/background\ 2.png);
   background-size: cover;
   background-position: center;
 }
@@ -30,7 +30,7 @@ nav {
 }
 
 .logo {
-  width: 240px;
+  width: 180px;
 }
 
 nav ul li {
@@ -100,6 +100,10 @@ nav ul li a:hover::after {
   flex-basis: 60%;
 }
 
+.about-col-2 p {
+    text-align: justify;
+}
+
 .sub-title {
   font-size: 50px;
   font-weight: 600;
@@ -137,6 +141,7 @@ nav ul li a:hover::after {
 .tap-contents p {
   list-style: none;
   margin: 10px 0;
+  text-align: justify;
 }
 
 .tap-contents ul li {
