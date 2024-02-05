@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/7e419c746b.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="header">
@@ -98,7 +99,43 @@
     </div>
 
     <!-------------------services------------------>
+    <div id="service">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Crafting captivating Shopify and WordPress websites for an
+              elevated online presence, tailored to your brand's unique
+              identity.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
 
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Graphic Design</h2>
+            <p>
+              From logos to marketing materials, I bring creativity and
+              precision to shape your unique visual identity.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-rectangle-ad"></i>
+            <h2>Digital Marketing</h2>
+            <p>
+              Comprehensive digital marketing solutions for enhanced visibility,
+              brand awareness, and measurable online growth.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
@@ -113,7 +150,7 @@
           tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
+        document.getElementById(tabname).classList.add("active-tab");
       }
     </script>
   </body>
