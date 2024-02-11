@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/7e419c746b.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/7e419c746b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div id="header">
       <div class="container">
         <nav>
-          <img src="Images/S-logo.png" alt="logo-image" class="logo" />
+          <img src="Images/logo.png" alt="logo-image" class="logo" />
 
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
 
         <div class="header-text">
@@ -57,18 +62,22 @@
             </div>
 
             <div class="tap-contents active-tab" id="skills">
-              <p>
-                I thrive on turning ideas into reality through clean and
-                efficient code. My technical toolkit includes proficiency in
-                <span>HTML5, CSS3, JavaScript (ES6)</span>, and
-                <span>Shopify</span> development, with a strong emphasis on
-                creating seamless user experiences. Leveraging
-                <span>Git</span> and <span>GitHub</span> for version control, I
-                ensure organized and collaborative code management. Committed to
-                staying ahead in this fast-paced industry, I am dedicated to
-                continuous learning and exploration of new technologies to
-                enhance my capabilities.
-              </p>
+              <div class="skill-icons-container">
+                <div class="top-icons">
+                  <img src="Images/Skills/HTML-logo.png" alt="HTML Icon" />
+                  <img src="Images/Skills/CSS-logo.png" alt="CSS Icon" />
+                  <img src="Images/Skills/JS-logo.png" alt="JavaScript Icon" />
+                </div>
+
+                <div class="bottom-icons">
+                  <img src="Images/Skills/GIT-logo.png" alt="Git Icon" />
+                  <img src="Images/Skills/GITHUB-logo.png" alt="GitHub Icon" />
+                  <img
+                    src="Images/Skills/Shopify-logo.png"
+                    alt="Shopify Icon"
+                  />
+                </div>
+              </div>
             </div>
 
             <div class="tap-contents" id="background">
@@ -99,13 +108,16 @@
     </div>
 
     <!-------------------services------------------>
-    <div id="service">
+    <div id="services">
       <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
           <div>
             <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
+            <h2>
+              Web <br />
+              Design
+            </h2>
             <p>
               Crafting captivating Shopify and WordPress websites for an
               elevated online presence, tailored to your brand's unique
@@ -137,6 +149,97 @@
       </div>
     </div>
 
+    <!-------------------portfolio-------------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/work-1.png" alt="work-1" />
+            <div class="layer">
+              <h3>Digital Gadgets Website</h3>
+              <p>
+                This website was created for a client using Shopify, customized
+                with CSS and JavaScript. It is fully functional, featuring over
+                50 products.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-2.png" alt="work-2" />
+            <div class="layer">
+              <h3>Clothing Website</h3>
+              <p>
+                This website was created for a client using Shopify, customized
+                with CSS and JavaScript. It is fully functional, featuring over
+                50 products.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-3.png" alt="work-3" />
+            <div class="layer">
+              <h3>LED Website</h3>
+              <p>
+                This website was created for a client using WordPress,
+                customized with Elementor. It is fully functional.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-------------------contact-------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>sulaimanndlovu@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>066 3352 002</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <a href="Images/SULAIMAN_NDLOVU_CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Massege"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @ Personal-Web. Made with
+          <i class="fa-solid fa-heart"></i> by Sulaiman Ndlovu
+        </p>
+      </div>
+    </div>
+
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
       var tabcontents = document.getElementsByClassName("tap-contents");
@@ -152,6 +255,39 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxAobtepJ6j_w8oro5Uw6Fl7JJ2GDNLF2fiKNka_QXb7ybbnwinochfIrwGpOMlj3rsGg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
   </body>
 </html>
