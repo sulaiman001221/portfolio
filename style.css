@@ -427,35 +427,26 @@ form .btn2 {
 }
 
 /*-----------------------CSS for small screen-----------------------*/
-nav .fa-solid {
-  display: none;
-}
-
-@media only screen and (max-width: 600px) {
-  nav .fa-solid {
-    display: block;
-    font-size: 25px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
-  }
-}
-
-/* Modify header text for better readability on smaller screens */
 .header-text {
-  margin-top: 20%;
+  margin-top: 20%; /* Adjust margin for vertical centering */
   font-size: 30px;
+  text-align: center; /* Center the header text */
 }
 
 @media only screen and (max-width: 600px) {
   .header-text {
-    margin-top: 50%;
+    margin-top: 50%; /* Adjust margin for vertical centering on smaller screens */
     font-size: 18px;
   }
 }
 
-/* Add transition effect for navigation menu */
+/* Move navigation bar to the right and align headings vertically */
+nav {
+  justify-content: flex-end; /* Move navigation items to the right */
+  align-items: center; /* Align items vertically */
+  padding: 0 20px; /* Adjust padding for better spacing */
+}
+
 nav ul {
   background: #1161b1;
   position: fixed;
@@ -474,23 +465,107 @@ nav ul {
   }
 }
 
-/* Ensure contact form inputs resize appropriately */
-form input,
-form textarea {
-  width: 100%;
-  border: 0;
-  outline: none;
-  background: #262626;
-  padding: 15px;
-  margin: 15px 0;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 6px;
+nav ul li {
+  display: block;
+  margin: 15px 0; /* Adjust margin for better spacing */
+  text-align: center; /* Center align navigation items */
 }
 
-/* Adjust footer text for smaller screens */
-@media only screen and (max-width: 600px) {
-  .copyright {
-    font-size: 14px;
-  }
+/* About Me adjustments */
+.about-col-2 p {
+  text-align: justify; /* Keep text alignment as justify */
 }
+
+.sub-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center; /* Center align sub-title */
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.tab-titles {
+  display: flex;
+  justify-content: center; /* Center align tab titles */
+  margin-bottom: 40px; /* Add margin for spacing */
+}
+
+.tab-links {
+  margin-right: 30px; /* Adjust spacing between tab links */
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #1161b1;
+  position: absolute;
+  left: 50%; /* Center align the line */
+  bottom: -6px;
+  transition: 0.5s;
+  transform: translateX(-50%); /* Center align the line */
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tap-contents p {
+  list-style: none;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+.skill-icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-icons-container img {
+  width: 15%;
+  height: auto;
+  margin: 2px;
+  margin-left: -20px;
+}
+
+.top-icons,
+.bottom-icons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.top-icons img:not(:last-child) {
+  margin-right: 40px;
+}
+
+.bottom-icons img:not(:last-child) {
+  margin-right: 40px;
+}
+
+.tap-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tap-contents p span {
+  color: #1161b1;
+}
+
+.tap-contents ul li span {
+  color: #1161b1;
+  font-weight: bold;
+}
+
+.tap-contents {
+  display: none;
+}
+
+.tap-contents.active-tab {
+  display: block;
+}
+
