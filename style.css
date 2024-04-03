@@ -427,145 +427,86 @@ form .btn2 {
 }
 
 /*-----------------------CSS for small screen-----------------------*/
-.header-text {
-  margin-top: 20%; /* Adjust margin for vertical centering */
-  font-size: 30px;
-  text-align: center; /* Center the header text */
-}
-
-@media only screen and (max-width: 600px) {
-  .header-text {
-    margin-top: 50%; /* Adjust margin for vertical centering on smaller screens */
-    font-size: 18px;
-  }
-}
-
-/* Move navigation bar to the right and align headings vertically */
-nav {
-  justify-content: flex-end; /* Move navigation items to the right */
-  align-items: center; /* Align items vertically */
-  padding: 0 20px; /* Adjust padding for better spacing */
-}
-
-nav ul {
-  background: #1161b1;
-  position: fixed;
-  top: 0;
-  right: -200px;
-  width: 200px;
-  height: 100vh;
-  padding-top: 50px;
-  z-index: 2;
-  transition: right 0.5s; /* Added transition effect */
-}
-
-@media only screen and (max-width: 600px) {
-  nav ul {
-    right: 0; /* Adjust position for smaller screens */
-  }
-}
-
-nav ul li {
-  display: block;
-  margin: 15px 0; /* Adjust margin for better spacing */
-  text-align: center; /* Center align navigation items */
-}
-
-/* About Me adjustments */
-.about-col-2 p {
-  text-align: justify; /* Keep text alignment as justify */
-}
-
-.sub-title {
-  font-size: 50px;
-  font-weight: 600;
-  color: #fff;
-  text-align: center; /* Center align sub-title */
-  margin-bottom: 20px; /* Add margin for spacing */
-}
-
-.tab-titles {
-  display: flex;
-  justify-content: center; /* Center align tab titles */
-  margin-bottom: 40px; /* Add margin for spacing */
-}
-
-.tab-links {
-  margin-right: 30px; /* Adjust spacing between tab links */
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
-}
-
-.tab-links::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background: #1161b1;
-  position: absolute;
-  left: 50%; /* Center align the line */
-  bottom: -6px;
-  transition: 0.5s;
-  transform: translateX(-50%); /* Center align the line */
-}
-
-.tab-links.active-link::after {
-  width: 50%;
-}
-
-.tap-contents p {
-  list-style: none;
-  margin: 10px 0;
-  text-align: justify;
-}
-
-.skill-icons-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.skill-icons-container img {
-  width: 15%;
-  height: auto;
-  margin: 2px;
-  margin-left: -20px;
-}
-
-.top-icons,
-.bottom-icons {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.top-icons img:not(:last-child) {
-  margin-right: 40px;
-}
-
-.bottom-icons img:not(:last-child) {
-  margin-right: 40px;
-}
-
-.tap-contents ul li {
-  list-style: none;
-  margin: 10px 0;
-}
-
-.tap-contents p span {
-  color: #1161b1;
-}
-
-.tap-contents ul li span {
-  color: #1161b1;
-  font-weight: bold;
-}
-
-.tap-contents {
+nav .fa-solid {
   display: none;
 }
 
-.tap-contents.active-tab {
-  display: block;
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(Images/phone-background\ 2.png);
+  }
+  .header-text {
+    margin-top: 100%;
+    font-size: 16px;
+  }
+
+  .header-text h1 {
+    font-size: 30px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: #1161b1;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .sub-title {
+    font-size: 30px;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+
+  .about-col-2 {
+    font-size: 14px;
+  }
+
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
 }
 
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
+}
