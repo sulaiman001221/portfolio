@@ -307,31 +307,5 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
-
-    <script>
-      // Define variables for the navigation menu and the navigation icon
-const sidemenu = document.getElementById("sidemenu");
-const menuIcon = document.querySelector('.fa-bars');
-
-// Function to open the navigation menu
-function openMenu() {
-  sidemenu.style.right = "0";
-}
-
-// Function to close the navigation menu
-function closeMenu() {
-  sidemenu.style.right = "-200px";
-}
-
-// Event listener for clicking the menu icon to open/close the navigation menu
-menuIcon.addEventListener('click', function() {
-  if (sidemenu.style.right === "0px") {
-    closeMenu();
-  } else {
-    openMenu();
-  }
-});
-
-    </script>
   </body>
 </html>
