@@ -3,309 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/7e419c746b.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <a href="#"
-            ><img src="Images/logo.png" alt="logo-image" class="logo"
-          /></a>
+    <header id="menu">
+      <nav class="top-bar">
+        <ul>
+          <li><a href="#menu">HOME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#">PROJECTS</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
 
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-
-        <div class="header-text">
-          <p>Web Developer</p>
-          <h1><span>Crafting Code,</span><br />Building Experiences</h1>
-        </div>
-      </div>
-    </div>
-    <!-------------------about------------------>
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="Images/user.png" alt="user-image" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              Hello, I'm Sulaiman Ndlovu, a passionate and dedicated web
-              developer with a flair for creating dynamic and user-friendly
-              websites. My journey into the world of web development began with
-              a solid foundation in HTML, CSS, and JavaScript, and it has since
-              evolved into a rewarding career where I bring digital visions to
-              life.
-            </p>
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('background')">
-                Background
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+    <main>
+      <section id="hero">
+          <div class="img-side">
+            <div class="circle">
+              <img src="./Images/Portfolio-home.gif" alt="typing-pic" />
+              <div class="overlay"></div>
             </div>
-
-            <div class="tap-contents active-tab" id="skills">
-              <div class="skill-icons-container">
-                <div class="top-icons">
-                  <img src="Images/Skills/HTML-logo.png" alt="HTML Icon" />
-                  <img src="Images/Skills/CSS-logo.png" alt="CSS Icon" />
-                  <img src="Images/Skills/JS-logo.png" alt="JavaScript Icon" />
-                </div>
-
-                <div class="bottom-icons">
-                  <img src="Images/Skills/GIT-logo.png" alt="Git Icon" />
-                  <img src="Images/Skills/GITHUB-logo.png" alt="GitHub Icon" />
-                  <img
-                    src="Images/Skills/Shopify-logo.png"
-                    alt="Shopify Icon"
-                  />
-                </div>
+          </div>
+          <div class="text-side">
+            <div class="greeting-text">
+              <h1>Hi,<br /><span>welcome!</span></h1>
+            </div>
+            <div class="squares">
+              <div class="square1">
+                <pre>
+<span class="comment">// About me</span>
+<span class="keyword">Info</span> = {
+  <span class="property">Name</span>: <span class="string">"Sulaiman Ndlovu"</span>;
+  <span class="property">Interest</span>: [ 
+    <span class="string">"Football"</span>,
+    <span class="string">"Movies"</span>,
+    <span class="string">"Weight lifting"</span>,
+  ]
+}
+</pre>
+              </div>
+              <div class="square2">
+                <pre>
+<span class="comment">// Additional Info</span>
+<span class="keyword">Details</span> = {
+  <span class="property">Profession</span>: <span class="string">"Developer"</span>;
+  <span class="property">Education</span>: <span class="string">"NCIT Student"</span>;
+  <span class="property">Institution</span>: <span class="string">"Umuzi"</span>;
+}</pre>
               </div>
             </div>
-
-            <div class="tap-contents" id="background">
-              <p>
-                I found my true calling in the ever-evolving realm of web
-                development. Over the past year, I've been on a freelancing
-                adventure, specializing in crafting Shopify stores for clients.
-                This experience has not only honed my technical skills but also
-                taught me the importance of effective communication and
-                collaboration in delivering successful projects.
-              </p>
-            </div>
-
-            <div class="tap-contents" id="education">
-              <ul>
-                <li>
-                  <span>2023 - current</span><br />Web Development (Umuzi)
-                </li>
-                <li>
-                  <span>2020 - 2022</span><br />Bachelor's of Administration
-                  (University of Pretoria)
-                </li>
-              </ul>
-            </div>
           </div>
+      </section>
+
+      <section id="skills">
+        <h2 class="heading">Skills and Tools</h2>
+        <div class="tech-stack">
+          <i class="fab fa-html5" aria-hidden="true"></i>
+          <i class="fab fa-css3-alt" aria-hidden="true"></i>
+          <i class="fab fa-js-square" aria-hidden="true"></i>
+          <i class="fab fa-node" aria-hidden="true"></i>
+          <i class="fa-brands fa-git-alt"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-wordpress"></i>
+          <i class="fa-brands fa-figma"></i>
+          <i class="fa-brands fa-docker" aria-hidden="true"></i>
+          <i class="fa-solid fa-database"></i>
+          <i class="fa-brands fa-elementor"></i>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-------------------services------------------>
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>
-              Web <br />
-              Design
-            </h2>
-            <p>
-              Crafting captivating Shopify and Ecwid websites for an elevated
-              online presence, tailored to your brand's unique identity.
-            </p>
-            <!----<a href="#">Learn more</a>---->
-          </div>
-
-          <div>
-            <i class="fa-solid fa-crop"></i>
-            <h2>Graphic Design</h2>
-            <p>
-              From logos to marketing materials, I bring creativity and
-              precision to shape your unique visual identity.
-            </p>
-            <!----<a href="#">Learn more</a>--->
-          </div>
-
-          <div>
-            <i class="fa-solid fa-rectangle-ad"></i>
-            <h2>Digital Marketing</h2>
-            <p>
-              Comprehensive digital marketing solutions for enhanced visibility,
-              brand awareness, and measurable online growth.
-            </p>
-            <!----<a href="#">Learn more</a>---->
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-------------------portfolio-------------------->
-    <div id="portfolio">
-      <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-          <div class="work">
-            <img src="Images/work-1.png" alt="work-1" />
-            <div class="layer">
-              <h3>Quiz Generator</h3>
-              <p>
-                This project showcases my skills in front-end web development
-                using HTML, CSS, and JavaScript. The JavaScript Quiz App is a
-                simple yet interactive quiz application that tests users'
-                knowledge of JavaScript fundamentals.
-              </p>
-              <a href="https://sulaiman001221.github.io/quiz-generator/"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="Images/work-2.png" alt="work-2" />
-            <div class="layer">
-              <h3>Calculator Web App</h3>
-              <p>
-                This project is a simple calculator web application built using
-                HTML, CSS, and JavaScript. The user interface is designed to be
-                intuitive and responsive, allowing users to perform calculations
-                easily on any device.
-              </p>
-              <a href="https://sulaiman001221.github.io/calculator-web-app/"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-          <div class="work">
-            <img src="Images/work-3.png" alt="work-3" />
-            <div class="layer">
-              <h3>Quote Generator</h3>
-              <p>
-                This project is a simple yet engaging random quote generator
-                built using HTML, CSS, and JavaScript. The user can click a
-                button to generate a new random quote, creating a dynamic and
-                interactive experience.
-              </p>
-              <a href="https://sulaiman001221.github.io/quote-generator/"
-                ><i class="fa-solid fa-link"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!-----------<a href="#" class="btn">See more</a>----------->
-      </div>
-    </div>
-
-    <!-------------------contact-------------------->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p>
-              <i class="fa-solid fa-paper-plane"></i>sulaimanndlovu@gmail.com
-            </p>
-            <p><i class="fa-solid fa-phone"></i>066 3352 002</p>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/sulaiman-ndlovu"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://wa.link/fcyzcc"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></a>
-            </div>
-            <a
-              href="Images/SULAIMAN_NDLOVU_CV.pdf"
-              target="_blank"
-              class="btn btn2"
-              >Download CV</a
-            >
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your Massege"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>
-          Copyright @ Personal-Web. Made with
-          <i class="fa-solid fa-heart"></i> by Sulaiman Ndlovu
-        </p>
-      </div>
-    </div>
-
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tap-contents");
-
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
-
-    <script>
-      var sidemenu = document.getElementById("sidemenu");
-
-      function openmenu() {
-        sidemenu.style.right = "0";
-      }
-
-      function closemenu() {
-        sidemenu.style.right = "-200px";
-      }
-    </script>
-
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbxAobtepJ6j_w8oro5Uw6Fl7JJ2GDNLF2fiKNka_QXb7ybbnwinochfIrwGpOMlj3rsGg/exec";
-      const form = document.forms["submit-to-google-sheet"];
-
-      const msg = document.getElementById("msg");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(function () {
-              msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+      <section id="projects">
+        <hr />
+        <h2 class="heading">Projects</h2>
+      </section>
+    </main>
   </body>
 </html>
