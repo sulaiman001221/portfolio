@@ -193,7 +193,7 @@ hr {
 }
 
 .tech-stack i:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   color: #ebedf0;
 }
 
@@ -207,3 +207,4 @@ hr {
 #projects h2 {
   margin-top: 10px;
 }
+
