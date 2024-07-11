@@ -348,6 +348,7 @@ button[type="submit"] {
   background-color: #adbac7;
   color: #000;
   font-size: 16px;
+  width: 100px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -355,3 +356,49 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #ebedf0;
 }
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 20px 70px;
+  background-color: #2d333b;
+  color: #adbac7;
+  margin-top: 80px;
+}
+
+.footer-left a {
+  color: #adbac7;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.footer-left a:hover {
+  color: #ebedf0;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.footer-right a {
+  color: #adbac7;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer-right a:hover {
+  color: #ebedf0;
+}
+
+/* about me  */
+
+#about {
+  width: 100%;
+  height: 100vh;
+}
+
