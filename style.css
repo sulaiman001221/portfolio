@@ -11,13 +11,18 @@ body {
   background-color: #22272e;
   color: #adbac7;
   width: 100%;
-  height: 100vh;
+}
+
+#menu {
+  position: sticky;
+  top: 0; /* Stick the top bar to the top of the viewport */
+  z-index: 1000; /* Ensure it stays on top of other content */
+  background-color: #22272e; /* Add background color to match .top-bar */
 }
 
 .top-bar {
   width: 100%;
   height: 65px;
-  background-color: #22272e;
   display: grid;
   place-items: center; /* Centers the grid item both horizontally and vertically */
 }
@@ -268,7 +273,7 @@ hr {
 }
 
 .projects-tech-stack h3 {
-  font-size: 16px; /* Adjusted font size to fit in a single line */
+  font-size: 16px; 
   margin-bottom: 5px;
   margin-top: 18px;
 }
@@ -276,6 +281,13 @@ hr {
 .projects-tech-stack hr {
   margin-top: 0;
   margin-bottom: 8px;
+}
+
+.projects-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .projects-icons i {
@@ -289,26 +301,35 @@ hr {
   color: #ebedf0;
 }
 
+.projects-link-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .projects-link-icons a {
-  color: #adbac7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #adbac7; /* Background color for the circle */
+  color: rgba(29, 34, 41, 1);
   font-size: 18px;
-  transition: color 0.3s;
-  margin-right: 30px;
+  transition: color 0.3s, background-color 0.3s;
+  margin-left: 10px;
 }
 
 .projects-link-icons a:hover {
-  color: #ebedf0;
+  color: #282e36;
+  background-color: #ebedf0; /* Change background color on hover */
 }
 
 /* Contact Section */
-#contact {
-  padding: 40px 20px;
-  background-color: #22272e;
-}
-
 .contact-form {
   max-width: 700px;
   margin-left: 70px;
+  margin-top: 70px;
   background-color: #2d333b;
   padding: 20px;
   border-radius: 10px;
@@ -330,7 +351,7 @@ hr {
   padding: 10px;
   border: 1px solid #444c56;
   border-radius: 5px;
-  background-color: #1c2128;
+  background-color: #22272e;
   color: #adbac7;
   font-size: 16px;
 }
@@ -355,6 +376,56 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #ebedf0;
+}
+
+/* about me  */
+#about {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  background-color: #22272e;
+  padding: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 35px;
+  background: linear-gradient(#1d2229, #282e36);
+  filter: brightness(1.3);
+  border-radius: 20px;
+  color: #adbac7;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  margin-top: 70px;
+}
+
+.content h2 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.content h3 {
+  color: #ebedf0;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.content p,
+.content li {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content ul li {
+  margin-bottom: 10px;
 }
 
 /* Footer */
@@ -394,11 +465,3 @@ footer {
 .footer-right a:hover {
   color: #ebedf0;
 }
-
-/* about me  */
-
-#about {
-  width: 100%;
-  height: 100vh;
-}
-
