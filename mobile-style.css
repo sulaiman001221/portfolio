@@ -1,0 +1,134 @@
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    font-size: 14px;
+    padding: 0 10px; /* Add some padding on mobile for better readability */
+  }
+
+  /* top menu ------------------------------------------------------------------------------ */
+  .top-bar {
+    display: none; /* Hide the top bar by default on mobile */
+  }
+
+  .top-bar.active {
+    display: flex; /* Show the top bar when active */
+    flex-direction: column; /* Arrange the links vertically */
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: 0; /* Align to the right */
+    background-color: #22272e; /* Background color for the menu */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.3s ease;
+  }
+
+  .mobile-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: #22272e;
+  }
+
+  /* Hamburger menu styles */
+  .ham-menu {
+    height: 50px;
+    width: 40px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #6f86ff;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+  }
+
+  .ham-menu span:nth-child(1) {
+    top: 25%;
+  }
+
+  .ham-menu span:nth-child(3) {
+    top: 75%;
+  }
+
+  .ham-menu.active span {
+    background-color: white;
+  }
+
+  .ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .ham-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  /* hero page -------------------------------------------------------------------------- */
+
+  #hero {
+    grid-template-columns: 1fr; /* Single column layout on mobile */
+  }
+
+  .img-side {
+    display: grid;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 0 20px; /* Optional: Adjust padding as needed */
+  }
+
+  .circle {
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 50px;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .greeting-text {
+    margin-top: 0;
+  }
+
+  .greeting-text h1 {
+    font-size: 45px;
+    margin-left: 50px;
+  }
+
+  .square1,
+  .square2 {
+    width: 340px;
+    height: 230px;
+  }
+
+  .square1 {
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+  }
+
+  .square2{
+    margin-left: 120px;
+  }
+
+  .square1 pre,
+  .square2 pre {
+    font-size: 15px;
+  }
+}
