@@ -1,10 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const hamMenu = document.querySelector(".ham-menu");
-    const topBar = document.querySelector(".top-bar");
-  
-    hamMenu.addEventListener("click", () => {
-      hamMenu.classList.toggle("active");
-      topBar.classList.toggle("active");
-    });
-  });
-  
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

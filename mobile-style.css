@@ -2,7 +2,15 @@
   body {
     width: 100%;
     font-size: 14px;
-    padding: 0 10px; /* Add some padding on mobile for better readability */
+    margin: 0;
+    padding: 0;
+  }
+
+  #heading {
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 30px;
   }
 
   /* top menu ------------------------------------------------------------------------------ */
@@ -86,63 +94,153 @@
 
   #hero {
     grid-template-columns: 1fr; /* Single column layout on mobile */
-  }
-
-  .img-side {
-    display: grid;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding: 0 20px; /* Optional: Adjust padding as needed */
+    margin: 0 auto;
   }
 
   .circle {
-    margin: 0 auto; /* Center horizontally */
-    margin-top: 50px;
-    max-width: 400px;
-    max-height: 400px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    max-width: 200px;
+    max-height: 200px;
   }
 
   .greeting-text {
-    margin-top: 0;
+    margin: 0 0;
   }
 
   .greeting-text h1 {
-    font-size: 45px;
+    font-size: 30px;
     margin-left: 50px;
   }
 
-  .square1,
-  .square2 {
-    width: 340px;
-    height: 230px;
-  }
-
   .square1 {
+    width: 240px;
+    height: 150px;
     margin-top: 20px;
-    margin-left: 70px;
-    margin-bottom: 20px;
+    margin-left: 50px;
   }
 
-  .square2{
-    margin-left: 120px;
+  .square2 {
+    width: 240px;
+    height: 120px;
+    margin-left: 50px;
   }
 
   .square1 pre,
   .square2 pre {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   /* skills------------------------------------------------------------------------------ */
   .tech-stack {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 6 columns for the first row */
-    gap: 1px; /* Adjust the gap between icons */
-    padding: 0;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on mobile */
+    grid-template-rows: repeat(3, auto); /* 3 rows on mobile */
+    gap: 5px; /* Adjust the gap between icons */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 0 30px;
   }
 
-  .tech-stack i:nth-child(n + 10) {
-    grid-column: span 1; /* Span 2 columns for icons from the 7th onward */
-    grid-row: 5; /* Place them in the second row */
-    margin-left: 0;
+  .tech-stack i {
+    font-size: 3em; /* Adjust the icon size if needed */
+    margin: 15px 0; /* Adjust margins as needed */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .tech-stack i:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .tech-stack i:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .tech-stack i:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .tech-stack i:nth-child(4) {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .tech-stack i:nth-child(5) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .tech-stack i:nth-child(6) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .tech-stack i:nth-child(7) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .tech-stack i:nth-child(8) {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .tech-stack i:nth-child(9) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .tech-stack i:nth-child(10) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .tech-stack i:nth-child(11) {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .main-hr {
+    border: none;
+    height: 3px;
+    margin-top: 70px;
+    width: 100%;
+  }
+
+  /* projects section -------------------------------------------------------------------- */
+  .project1,
+  .project2,
+  .project3 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+  }
+  .project-img-side img {
+    width: 300px;
+    height: auto;
+  }
+
+  .info-square {
+    width: 300px;
+  }
+
+  .info-square p {
+    font-size: 13.5px;
+  }
+
+  /* contact form ----------------------------------------------------------------------- */
+  .contact-form {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 30px auto;
+  }
+
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 120px;
+    margin-left: 60px;
+  }
+
+  /* footer ----------------------------------------------------------------------------- */
+  footer {
+    grid-template-columns: 1fr;
   }
 }
