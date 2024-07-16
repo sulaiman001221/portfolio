@@ -6,7 +6,7 @@
     padding: 0;
   }
 
-  #heading {
+  .heading {
     display: flex;
     justify-content: center;
     font-size: 30px;
@@ -250,7 +250,7 @@
     max-width: 80%;
     margin: 0 auto;
     margin-top: 50px;
-    padding: 30px auto;
+    padding: 30px; /* Corrected padding value */
   }
 
   .button-container {
