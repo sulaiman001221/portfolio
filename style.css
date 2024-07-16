@@ -51,7 +51,7 @@ body {
 .top-bar ul li a {
   color: #adbac7;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   transition: color 0.3s;
 }
 
@@ -134,8 +134,8 @@ hr {
 
 .square1,
 .square2 {
-  width: 274px;
-  height: 170px;
+  width: 259px;
+  height: 155px;
   border-radius: 20px;
   background: linear-gradient(rgba(29, 34, 41, 1), rgba(40, 46, 54, 0.8));
   padding: 10px;
