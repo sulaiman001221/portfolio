@@ -155,12 +155,7 @@
   /* skills------------------------------------------------------------------------------ */
   .tech-stack {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on mobile */
-    grid-template-rows: repeat(3, auto); /* 3 rows on mobile */
-    gap: 5px; /* Adjust the gap between icons */
-    justify-items: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    padding: 0 30px;
+    padding: 0 20px 0 40px;
   }
 
   .tech-stack i {
@@ -169,51 +164,53 @@
     transition: transform 0.3s ease, color 0.3s ease;
   }
 
-  .tech-stack i:nth-child(1) {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .tech-stack i:nth-child(2) {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .tech-stack i:nth-child(3) {
-    grid-column: 3;
-    grid-row: 1;
-  }
-  .tech-stack i:nth-child(4) {
-    grid-column: 4;
-    grid-row: 1;
+  .skills-first-row,
+  .skills-second-row,
+  .skills-third-row {
+    display: contents;
   }
 
-  .tech-stack i:nth-child(5) {
-    grid-column: 1;
-    grid-row: 2;
+  .skills-first-row i:nth-child(1) {
+    grid-area: 1 / 1;
   }
-  .tech-stack i:nth-child(6) {
-    grid-column: 2;
-    grid-row: 2;
+  .skills-first-row i:nth-child(2) {
+    grid-area: 1 / 2;
   }
-  .tech-stack i:nth-child(7) {
-    grid-column: 3;
-    grid-row: 2;
+  .skills-first-row i:nth-child(3) {
+    grid-area: 1 / 3;
   }
-  .tech-stack i:nth-child(8) {
-    grid-column: 4;
-    grid-row: 2;
+  .skills-first-row i:nth-child(4) {
+    grid-area: 1 / 4;
   }
 
-  .tech-stack i:nth-child(9) {
-    grid-column: 1;
-    grid-row: 3;
+  .skills-first-row i:nth-child(5) {
+    grid-area: 2 / 1;
   }
-  .tech-stack i:nth-child(10) {
-    grid-column: 2;
-    grid-row: 3;
+  .skills-first-row i:nth-child(6) {
+    grid-area: 2 / 2;
   }
-  .tech-stack i:nth-child(11) {
-    grid-column: 3;
-    grid-row: 3;
+  .skills-second-row i:nth-child(1) {
+    grid-area: 2 / 3;
+  }
+  .skills-second-row i:nth-child(2) {
+    grid-area: 2 / 4;
+  }
+
+  .skills-second-row i:nth-child(3) {
+    grid-area: 3 / 1;
+    justify-self: end;
+  }
+  .skills-second-row i:nth-child(4) {
+    grid-area: 3 / 2;
+    justify-self: end;
+  }
+  .skills-third-row i:nth-child(1) {
+    grid-area: 3 / 3;
+    justify-self: end;
+  }
+
+  .tech-stack i::after {
+    font-size: 11px;
   }
 
   .main-hr {
@@ -243,6 +240,7 @@
 
   .info-square p {
     font-size: 13.5px;
+    text-align: left;
   }
 
   /* contact form ----------------------------------------------------------------------- */
