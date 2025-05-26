@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me</title>
+    <title>About Me - Sulaiman Ndlovu</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./about-styles.css" />
     <link rel="stylesheet" href="./mobile-style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
@@ -16,139 +17,528 @@
     />
   </head>
   <body>
+    <!-- Header with Animated Navigation -->
     <header class="menu">
       <nav class="top-bar">
+        <div class="logo">
+          <a href="index.html">Sulaiman Ndlovu</a>
+        </div>
         <ul>
-          <li><a href="./index.html#hero">HOME</a></li>
-          <li><a href="./about.html">ABOUT</a></li>
-          <li><a href="./index.html#skills">SKILLS</a></li>
-          <li><a href="./index.html#projects">PROJECTS</a></li>
-          <li><a href="./index.html#contact">CONTACT</a></li>
+          <li><a href="index.html" class="menu-link">HOME</a></li>
+          <li><a href="about.html" class="menu-link active">ABOUT</a></li>
+          <li><a href="index.html#skills" class="menu-link">SKILLS</a></li>
+          <li>
+            <a href="./index.html#projects" class="menu-link">PROJECTS</a>
+          </li>
+          <li><a href="index.html#contact" class="menu-link">CONTACT</a></li>
         </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-sun" id="themeIcon"></i>
+        </button>
       </nav>
 
       <nav class="mobile-top-bar">
-        <div class="ham-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="logo">
+          <a href="index.html">Sulaiman Ndlovu</a>
+        </div>
+        <div class="mobile-controls">
+          <button
+            class="theme-toggle mobile-theme-toggle"
+            id="mobileThemeToggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-sun" id="mobileThemeIcon"></i>
+          </button>
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </nav>
       <hr />
     </header>
 
-    <main>
-      <section id="about">
-        <div class="content">
-          <h2>About Me</h2>
-          <p>
-            Hello! I'm Sulaiman Ndlovu, a passionate web developer with a strong
-            background in creating dynamic and responsive web applications. With
-            a keen eye for design and a love for coding, I strive to deliver
-            seamless user experiences and innovative solutions.
-          </p>
+    <main class="about-page">
+      <!-- Hero Section -->
+      <section class="about-hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="animated-title">
+              <span class="line">Hello, I'm</span>
+              <span class="line highlight">Sulaiman Ndlovu</span>
+              <span class="line">A passionate developer</span>
+            </h1>
+            <p class="hero-subtitle">
+              Crafting digital experiences with code, creativity, and a touch of
+              magic ✨
+            </p>
+          </div>
+          <div class="hero-visual">
+            <div class="floating-elements">
+              <div class="code-snippet">
+                <span class="code-line">const developer = {</span>
+                <span class="code-line"> name: "Sulaiman",</span>
+                <span class="code-line"> passion: "coding",</span>
+                <span class="code-line"> status: "learning"</span>
+                <span class="code-line">};</span>
+              </div>
+              <div class="floating-icon" data-icon="💻"></div>
+              <div class="floating-icon" data-icon="🚀"></div>
+              <div class="floating-icon" data-icon="⚡"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <h3>My Journey</h3>
-          <p>
-            My journey into the world of web development began with a curiosity
-            for how websites work. I started teaching myself HTML, CSS, and
-            JavaScript, and soon, I was creating small projects and
-            experimenting with various web technologies. This passion led me
-            decide to pursue formal education and training in web development,
-            where I am currently expanding my skills and knowledge.
-          </p>
-
-          <h3>Expertise</h3>
-          <div>
-            <ul>
-              <li>
-                <strong>Responsive Design</strong>: Expertise in creating
-                mobile-first, responsive websites that provide excellent user
-                experiences on all devices.
-              </li>
-              <li>
-                <strong>Web Performance Optimization</strong>: Knowledgeable in
-                optimizing websites for speed and performance.
-              </li>
-            </ul>
+      <!-- Interactive Journey Timeline -->
+      <section class="journey-section">
+        <h2 class="section-title">
+          <i class="fas fa-route"></i>
+          My Journey
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item" data-year="2023">
+            <div class="timeline-marker">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Started at Umuzi</h3>
+              <p>
+                Began my journey in software development at Umuzi, diving deep
+                into programming fundamentals and discovering my passion for
+                creating digital solutions.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Learning</span>
+                <span class="tag">Growth</span>
+                <span class="tag">Foundation</span>
+              </div>
+            </div>
           </div>
 
-          <h3>Interests</h3>
-          <p>
-            When I'm not coding, you can find me indulging in my favorite
-            activities:
-          </p>
-          <div>
-            <ul>
-              <li>
-                <strong>Football</strong>: A huge football enthusiast, both as a
-                player and a fan.
-              </li>
-              <li>
-                <strong>Movies</strong>: I enjoy watching a variety of films,
-                from classic cinema to the latest blockbusters.
-              </li>
-              <li>
-                <strong>Weight Lifting</strong>: Fitness is a big part of my
-                life, and I enjoy the challenge and discipline of weight
-                lifting.
-              </li>
-            </ul>
+          <div class="timeline-item" data-year="2023">
+            <div class="timeline-marker">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>First Lines of Code</h3>
+              <p>
+                Wrote my first "Hello World" program and fell in love with the
+                logic and creativity that programming offers. Started with HTML,
+                CSS, and JavaScript.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
           </div>
 
-          <h3>My View on AI</h3>
-          <p>
-            I personally believe that AI won't take our jobs. Instead, it
-            enhances our lives as software developers. AI makes us more
-            productive, teaching us quickly and enabling us to solve problems
-            that have already been addressed efficiently. Our role as software
-            developers is to discover unsolved problems, create solutions, and
-            then teach AI so that it can assist others. This collaboration with
-            AI not only accelerates our work but also drives innovation,
-            allowing us to focus on more complex and creative challenges.
-          </p>
+          <div class="timeline-item" data-year="2024">
+            <div class="timeline-marker">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>First Real Projects</h3>
+              <p>
+                Built my first interactive applications including a memory game
+                and semitone music app. Learned the importance of user
+                experience and clean code.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Projects</span>
+                <span class="tag">UX/UI</span>
+                <span class="tag">Problem Solving</span>
+              </div>
+            </div>
+          </div>
 
-          <h3>Get in Touch</h3>
+          <div class="timeline-item" data-year="2024">
+            <div class="timeline-marker">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Client Work & Growth</h3>
+              <p>
+                Delivered my first client project - an e-commerce website.
+                Gained experience in WordPress, client communication, and
+                project management.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Client Work</span>
+                <span class="tag">WordPress</span>
+                <span class="tag">E-commerce</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-year="2025">
+            <div class="timeline-marker current">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Continuous Learning</h3>
+              <p>
+                Currently expanding my skills in modern frameworks, exploring
+                new technologies, and working on exciting projects that
+                challenge my abilities.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Innovation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Skills Radar -->
+      <section class="skills-radar-section">
+        <h2 class="section-title">
+          <i class="fas fa-chart-radar"></i>
+          Skills & Expertise
+        </h2>
+        <div class="skills-container">
+          <div class="skill-category" data-category="frontend">
+            <div class="category-header">
+              <i class="fas fa-palette"></i>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar">
+                <span class="skill-name">HTML5</span>
+                <div class="skill-progress">
+                  <div class="progress-fill" data-skill="90"></div>
+                </div>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">CSS3</span>
+                <div class="skill-progress">
+                  <div class="progress-fill" data-skill="85"></div>
+                </div>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-progress">
+                  <div class="progress-fill" data-skill="80"></div>
+                </div>
+                <span class="skill-percentage">80%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category" data-category="backend">
+            <div class="category-header">
+              <i class="fas fa-server"></i>
+              <h3>Backend & Tools</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar">
+                <span class="skill-name">Node.js</span>
+                <div class="skill-progress">
+                  <div class="progress-fill" data-skill="70"></div>
+                </div>
+                <span class="skill-percentage">70%</span>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">Git & GitHub</span>
+                <div class="skill-progress">
+                  <div class="progress-fill" data-skill="85"></div>
+                </div>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">SQL</span>
+                <div class="skill-progress">
+                  <div class="progress-fill" data-skill="75"></div>
+                </div>
+                <span class="skill-percentage">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category" data-category="design">
+            <div class="category-header">
+              <i class="fas fa-paint-brush"></i>
+              <h3>Design & CMS</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar">
+                <span class="skill-name">WordPress</span>
+                <div class="skill-progress">
+                  <div class="progress-fill" data-skill="80"></div>
+                </div>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">Figma</span>
+                <div class="skill-progress">
+                  <div class="progress-fill" data-skill="70"></div>
+                </div>
+                <span class="skill-percentage">70%</span>
+              </div>
+              <div class="skill-bar">
+                <span class="skill-name">Elementor</span>
+                <div class="skill-progress">
+                  <div class="progress-fill" data-skill="85"></div>
+                </div>
+                <span class="skill-percentage">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personal Interests -->
+      <section class="interests-section">
+        <h2 class="section-title">
+          <i class="fas fa-heart"></i>
+          Beyond Code
+        </h2>
+        <div class="interests-grid">
+          <div class="interest-card" data-interest="football">
+            <div class="interest-icon">
+              <i class="fas fa-futbol"></i>
+            </div>
+            <h3>Football</h3>
+            <p>
+              Passionate about the beautiful game. Whether playing or watching,
+              football teaches me teamwork, strategy, and perseverance.
+            </p>
+            <div class="interest-stats">
+              <span class="stat">⚽ Favorite Position: Midfielder</span>
+              <span class="stat">🏆 Favorite Team: Manchester United</span>
+            </div>
+          </div>
+
+          <div class="interest-card" data-interest="movies">
+            <div class="interest-icon">
+              <i class="fas fa-film"></i>
+            </div>
+            <h3>Movies</h3>
+            <p>
+              Love exploring different worlds through cinema. From sci-fi to
+              drama, movies inspire my creativity and storytelling in code.
+            </p>
+            <div class="interest-stats">
+              <span class="stat">🎬 Favorite Genre: Sci-Fi</span>
+              <span class="stat">🍿 Movies Watched: 500+</span>
+            </div>
+          </div>
+
+          <div class="interest-card" data-interest="fitness">
+            <div class="interest-icon">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <h3>Weight Lifting</h3>
+            <p>
+              Building physical strength parallels building mental resilience.
+              The gym teaches discipline and goal-setting that I apply to
+              coding.
+            </p>
+            <div class="interest-stats">
+              <span class="stat">💪 Training: 4x per week</span>
+              <span class="stat">🎯 Goal: Strength & Health</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Fun Facts -->
+      <section class="fun-facts-section">
+        <h2 class="section-title">
+          <i class="fas fa-lightbulb"></i>
+          Fun Facts About Me
+        </h2>
+        <div class="facts-container">
+          <div class="fact-card" data-fact="1">
+            <div class="fact-number">01</div>
+            <div class="fact-content">
+              <h3>Coffee Powered</h3>
+              <p>
+                I've consumed approximately
+                <span class="highlight">365+</span> cups of coffee while coding
+                this year ☕
+              </p>
+            </div>
+          </div>
+
+          <div class="fact-card" data-fact="2">
+            <div class="fact-number">02</div>
+            <div class="fact-content">
+              <h3>Debug Detective</h3>
+              <p>
+                My record for finding a bug is
+                <span class="highlight">3 hours</span> - it was a missing
+                semicolon 🐛
+              </p>
+            </div>
+          </div>
+
+          <div class="fact-card" data-fact="3">
+            <div class="fact-number">03</div>
+            <div class="fact-content">
+              <h3>Night Owl</h3>
+              <p>
+                My most productive coding hours are between
+                <span class="highlight">10 PM - 2 AM</span> 🦉
+              </p>
+            </div>
+          </div>
+
+          <div class="fact-card" data-fact="4">
+            <div class="fact-number">04</div>
+            <div class="fact-content">
+              <h3>Learning Enthusiast</h3>
+              <p>
+                I learn something new in tech every day - currently exploring
+                <span class="highlight">React</span> 📚
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Values & Philosophy -->
+      <section class="philosophy-section">
+        <h2 class="section-title">
+          <i class="fas fa-compass"></i>
+          My Philosophy
+        </h2>
+        <div class="philosophy-content">
+          <div class="philosophy-card">
+            <div class="philosophy-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Continuous Growth</h3>
+            <p>
+              Every challenge is an opportunity to learn. I believe in embracing
+              failures as stepping stones to success and constantly pushing my
+              boundaries.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Collaboration</h3>
+            <p>
+              Great things happen when minds come together. I value teamwork,
+              open communication, and learning from others' perspectives.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>User-Centric</h3>
+            <p>
+              Technology should serve people. I focus on creating solutions that
+              are not just functional, but meaningful and accessible to users.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Innovation</h3>
+            <p>
+              I'm driven by curiosity and the desire to build something new.
+              Whether it's a small feature or a big idea, innovation excites me.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta-section">
+        <div class="cta-content">
+          <h2>Let's Build Something Amazing Together</h2>
           <p>
-            I'm always open to new opportunities, collaborations, and
-            connections. If you'd like to get in touch, feel free to reach out
-            via the contact form on my website or connect with me on social
-            media.
+            I'm always excited to work on new projects and collaborate with
+            fellow developers, designers, and innovators.
           </p>
-          <p>
-            <i>
-              Thank you for visiting my portfolio. I look forward to connecting
-              with you!</i
-            >
-          </p>
+          <div class="cta-buttons">
+            <a href="./index.html#contact" class="cta-btn primary">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </a>
+            <a href="./projects.html" class="cta-btn secondary">
+              <i class="fas fa-eye"></i>
+              View My Work
+            </a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="footer-left">
-        <a href="./Images/SULAIMAN_NDLOVU_CV.pdf" target="_blank"
-          >View/Download CV</a
-        >
-      </div>
-      <div class="footer-right">
-        <a href="https://github.com/sulaiman001221" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a href="https://linkedin.com/in/sulaiman001221" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="https://wa.me/+27663352002" target="_blank"
-          ><i class="fab fa-whatsapp"></i
-        ></a>
-        <a href="mailto:sulaimanndlovu@gmail.com" target="_blank"
-          ><i class="fas fa-envelope"></i
-        ></a>
-        <a href="tel:+27663352002" target="_blank"
-          ><i class="fas fa-phone"></i
-        ></a>
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; 2025 Sulaiman Ndlovu. All rights reserved.</p>
+        </div>
+
+        <div class="footer-right">
+          <div class="social-links">
+            <a
+              href="https://github.com/sulaiman001221"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/sulaiman001221"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://wa.me/+27663352002"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="mailto:sulaimanndlovu@gmail.com"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+27663352002" target="_blank" class="social-link">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+          <a
+            href="./Images/SULAIMAN_NDLOVU_CV.pdf"
+            target="_blank"
+            class="cv-link"
+          >
+            <i class="fas fa-download"></i>
+            Download CV
+          </a>
+        </div>
       </div>
     </footer>
-    <script src="./menu-toggle.js"></script>
+
+    <script src="./about.js"></script>
   </body>
 </html>
