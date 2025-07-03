@@ -1,0 +1,113 @@
+/* Contact Section */
+#contact {
+  background: var(--bg-secondary);
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.contact-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 25px rgba(83, 155, 245, 0.2);
+}
+
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, var(--accent-color), #a855f7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.contact-card h3 {
+  color: var(--text-accent);
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-card p {
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.contact-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #0969da;
+}
+
+.contact-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-animation {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.message-bubble {
+  position: absolute;
+  background: var(--accent-color);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  animation: bubbleFloat 3s ease-in-out infinite;
+}
+
+.bubble-1 {
+  top: 20%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.bubble-2 {
+  top: 50%;
+  right: 10%;
+  animation-delay: 1s;
+}
+
+.bubble-3 {
+  bottom: 20%;
+  left: 30%;
+  animation-delay: 2s;
+}
+
+@keyframes bubbleFloat {
+  0%, 100% { transform: translateY(0px); opacity: 0.7; }
+  50% { transform: translateY(-15px); opacity: 1; }
+}

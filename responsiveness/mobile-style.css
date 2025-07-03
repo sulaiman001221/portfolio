@@ -1,5 +1,4 @@
 /* Mobile-specific styles and responsive enhancements */
-
 @media (max-width: 1024px) {
   .hero-container {
     gap: 60px;
@@ -100,6 +99,19 @@
   
   .section-subtitle {
     font-size: 1rem;
+  }
+
+  /* logo design */
+    .logo a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+  
+  .logo-large a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
   }
   
   /* Skills mobile */
@@ -576,3 +588,21 @@
     animation: none !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

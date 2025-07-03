@@ -27,7 +27,7 @@
 }
 
 .animated-title {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -46,7 +46,7 @@
 }
 
 .hero-subtitle {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--text-secondary);
   line-height: 1.6;
 }
@@ -188,6 +188,7 @@
   font-size: 1.2rem;
   z-index: 2;
   box-shadow: 0 0 0 4px var(--bg-primary);
+  transition: transform 0.3s ease;
 }
 
 .timeline-marker.current {
