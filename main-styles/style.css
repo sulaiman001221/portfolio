@@ -11,6 +11,11 @@
   --success-color: #238636;
   --warning-color: #d29922;
   --error-color: #da3633;
+  --color-keyword: #569cd6;
+  --color-variable: #9cdcfe;
+  --color-property: #9cdcfe;
+  --color-string: #ce9178;
+  --color-comment: #6a9955;
   --bg-primary-rgb: 34, 39, 46;
 }
 
@@ -26,6 +31,11 @@
   --success-color: #1a7f37;
   --warning-color: #9a6700;
   --error-color: #cf222e;
+  --color-keyword: #0000aa;
+  --color-variable: #003366;
+  --color-property: #0055aa;
+  --color-string: #a31515;
+  --color-comment: #008000;
   --bg-primary-rgb: 255, 255, 255;
 }
 
@@ -104,7 +114,8 @@ body {
 }
 
 @keyframes floatBg {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
   33% {
@@ -168,13 +179,18 @@ body {
 
 /* Animated border effect */
 .logo a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: linear-gradient(45deg, var(--accent-color), #a855f7, var(--accent-color));
+  background: linear-gradient(
+    45deg,
+    var(--accent-color),
+    #a855f7,
+    var(--accent-color)
+  );
   border-radius: 50%;
   z-index: -1;
   opacity: 0;
@@ -204,7 +220,7 @@ body {
 }
 
 .menu-link::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -452,7 +468,12 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.5s ease;
 }
 
@@ -508,9 +529,15 @@ body {
   border-radius: 50%;
 }
 
-.control.red { background: #ff5f57; }
-.control.yellow { background: #ffbd2e; }
-.control.green { background: #28ca42; }
+.control.red {
+  background: #ff5f57;
+}
+.control.yellow {
+  background: #ffbd2e;
+}
+.control.green {
+  background: #28ca42;
+}
 
 .editor-title {
   color: var(--text-secondary);
@@ -519,7 +546,7 @@ body {
 
 .editor-content {
   padding: 20px;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   font-size: 0.9rem;
   line-height: 1.6;
 }
@@ -538,11 +565,21 @@ body {
   opacity: 0.6;
 }
 
-.keyword { color: #569cd6; }
-.variable { color: #9cdcfe; }
-.property { color: #9cdcfe; }
-.string { color: #ce9178; }
-.comment { color: #6a9955; }
+.keyword {
+  color: var(--color-keyword);
+}
+.variable {
+  color: var(--color-variable);
+}
+.property {
+  color: var(--color-property);
+}
+.string {
+  color: var(--color-string);
+}
+.comment {
+  color: var(--color-comment);
+}
 
 .cursor {
   animation: blink 1s infinite;
@@ -550,8 +587,14 @@ body {
 }
 
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .floating-elements {
@@ -574,15 +617,35 @@ body {
   content: attr(data-tech);
 }
 
-.floating-tech:nth-child(1) { top: 10%; right: 20%; }
-.floating-tech:nth-child(2) { top: 30%; left: -10%; }
-.floating-tech:nth-child(3) { bottom: 40%; right: -5%; }
-.floating-tech:nth-child(4) { bottom: 20%; left: 15%; }
-.floating-tech:nth-child(5) { top: 60%; right: 30%; }
+.floating-tech:nth-child(1) {
+  top: 10%;
+  right: 20%;
+}
+.floating-tech:nth-child(2) {
+  top: 30%;
+  left: -10%;
+}
+.floating-tech:nth-child(3) {
+  bottom: 40%;
+  right: -5%;
+}
+.floating-tech:nth-child(4) {
+  bottom: 20%;
+  left: 15%;
+}
+.floating-tech:nth-child(5) {
+  top: 60%;
+  right: 30%;
+}
 
 @keyframes floatTech {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(180deg); }
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
 }
 
 .scroll-indicator {
@@ -606,9 +669,19 @@ body {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-  40% { transform: translateX(-50%) translateY(-10px); }
-  60% { transform: translateX(-50%) translateY(-5px); }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
 }
 
 /* Section Styles */
