@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Mobile menu functionality
   const hamMenu = document.querySelector(".ham-menu");
   const topBar = document.querySelector(".top-bar");
-  const menuLinks = document.querySelectorAll(".top-bar .menu-link");
+  const menuLinks = document.querySelectorAll(".menu-link");
 
   if (hamMenu && topBar) {
     hamMenu.addEventListener("click", () => {
