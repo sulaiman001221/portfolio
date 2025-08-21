@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sulaiman Ndlovu - Portfolio</title>
     <link rel="stylesheet" href="./main-styles/style.css" />
-    <link rel="stylesheet" href="./sections/skills/skills.css">
-    <link rel="stylesheet" href="./sections/projects/projects.css">
-    <link rel="stylesheet" href="./sections/contact/contact.css">
+    <link rel="stylesheet" href="./sections/skills/skills.css" />
+    <link rel="stylesheet" href="./sections/projects/projects.css" />
+    <link rel="stylesheet" href="./sections/contact/contact.css" />
     <link rel="stylesheet" href="./responsiveness/mobile-style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
@@ -29,13 +29,13 @@
 
     <!-- Header -->
     <header class="menu">
+      <!-- Desktop nav (normal) -->
       <nav class="top-bar">
-        <div class="logo">
-          <a href="./index.html">SN</a>
-        </div>
         <ul>
           <li><a href="./index.html" class="menu-link active">HOME</a></li>
-          <li><a href="./sections/about/about.html" class="menu-link">ABOUT</a></li>
+          <li>
+            <a href="./sections/about/about.html" class="menu-link">ABOUT</a>
+          </li>
           <li><a href="#skills" class="menu-link">SKILLS</a></li>
           <li><a href="#projects" class="menu-link">PROJECTS</a></li>
           <li><a href="#contact" class="menu-link">CONTACT</a></li>
@@ -45,12 +45,17 @@
         </button>
       </nav>
 
+      <!-- Mobile header bar -->
       <nav class="mobile-top-bar">
         <div class="logo">
           <a href="./index.html">SN</a>
         </div>
         <div class="mobile-controls">
-          <button class="theme-toggle mobile-theme-toggle" id="mobileThemeToggle" aria-label="Toggle theme">
+          <button
+            class="theme-toggle mobile-theme-toggle"
+            id="mobileThemeToggle"
+            aria-label="Toggle theme"
+          >
             <i class="fas fa-sun" id="mobileThemeIcon"></i>
           </button>
           <div class="ham-menu">
@@ -72,25 +77,26 @@
               <i class="fas fa-code"></i>
               <span>Available for work</span>
             </div>
-            
+
             <h1 class="hero-title">
               <span class="title-line">Hi, I'm</span>
               <span class="title-line highlight">Sulaiman Ndlovu</span>
               <span class="title-line">Software Developer</span>
             </h1>
-            
+
             <p class="hero-description">
-              I craft digital experiences that blend creativity with functionality. 
-              Passionate about clean code, innovative solutions, and bringing ideas to life.
+              I craft digital experiences that blend creativity with
+              functionality. Passionate about clean code, innovative solutions,
+              and bringing ideas to life.
             </p>
-            
+
             <div class="hero-stats">
               <div class="stat-item">
-                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-number" data-target="4">0</span>
                 <span class="stat-label">Projects Completed</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number" data-target="8">0</span>
+                <span class="stat-number" data-target="10">0</span>
                 <span class="stat-label">Technologies</span>
               </div>
               <div class="stat-item">
@@ -98,7 +104,7 @@
                 <span class="stat-label">Years Learning</span>
               </div>
             </div>
-            
+
             <div class="hero-actions">
               <a href="#projects" class="cta-btn primary">
                 <i class="fas fa-rocket"></i>
@@ -111,7 +117,7 @@
               </a>
             </div>
           </div>
-          
+
           <div class="hero-visual">
             <div class="code-editor">
               <div class="editor-header">
@@ -126,35 +132,35 @@
                 <div class="code-line">
                   <span class="line-number">1</span>
                   <span class="code-text">
-                    <span class="keyword">const</span> 
+                    <span class="keyword">const</span>
                     <span class="variable">developer</span> = {
                   </span>
                 </div>
                 <div class="code-line">
                   <span class="line-number">2</span>
                   <span class="code-text">
-                    &nbsp;&nbsp;<span class="property">name</span>: 
+                    &nbsp;&nbsp;<span class="property">name</span>:
                     <span class="string">"Sulaiman Ndlovu"</span>,
                   </span>
                 </div>
                 <div class="code-line">
                   <span class="line-number">3</span>
                   <span class="code-text">
-                    &nbsp;&nbsp;<span class="property">role</span>: 
+                    &nbsp;&nbsp;<span class="property">role</span>:
                     <span class="string">"Frontend Developer"</span>,
                   </span>
                 </div>
                 <div class="code-line">
                   <span class="line-number">4</span>
                   <span class="code-text">
-                    &nbsp;&nbsp;<span class="property">passion</span>: 
+                    &nbsp;&nbsp;<span class="property">passion</span>:
                     <span class="string">"Creating amazing UX"</span>,
                   </span>
                 </div>
                 <div class="code-line">
                   <span class="line-number">5</span>
                   <span class="code-text">
-                    &nbsp;&nbsp;<span class="property">status</span>: 
+                    &nbsp;&nbsp;<span class="property">status</span>:
                     <span class="string">"Always learning"</span>
                   </span>
                 </div>
@@ -165,23 +171,45 @@
                 <div class="code-line typing-line">
                   <span class="line-number">7</span>
                   <span class="code-text">
-                    <span class="comment">// Ready to build something amazing</span>
+                    <span class="comment"
+                      >// Ready to build something amazing</span
+                    >
                     <span class="cursor">|</span>
                   </span>
                 </div>
               </div>
             </div>
-            
+
             <div class="floating-elements">
-              <div class="floating-tech" data-tech="⚛️" style="--delay: 0s"></div>
-              <div class="floating-tech" data-tech="🚀" style="--delay: 1s"></div>
-              <div class="floating-tech" data-tech="💻" style="--delay: 2s"></div>
-              <div class="floating-tech" data-tech="⚡" style="--delay: 3s"></div>
-              <div class="floating-tech" data-tech="🎨" style="--delay: 4s"></div>
+              <div
+                class="floating-tech"
+                data-tech="⚛️"
+                style="--delay: 0s"
+              ></div>
+              <div
+                class="floating-tech"
+                data-tech="🚀"
+                style="--delay: 1s"
+              ></div>
+              <div
+                class="floating-tech"
+                data-tech="💻"
+                style="--delay: 2s"
+              ></div>
+              <div
+                class="floating-tech"
+                data-tech="⚡"
+                style="--delay: 3s"
+              ></div>
+              <div
+                class="floating-tech"
+                data-tech="🎨"
+                style="--delay: 4s"
+              ></div>
             </div>
           </div>
         </div>
-        
+
         <div class="scroll-indicator">
           <div class="scroll-text">Scroll to explore</div>
           <div class="scroll-arrow">
@@ -202,7 +230,7 @@
               The tools and technologies I use to bring ideas to life
             </p>
           </div>
-          
+
           <div class="skills-grid">
             <div class="skill-card" data-skill="html">
               <div class="skill-icon">
@@ -215,7 +243,7 @@
               </div>
               <span class="skill-percentage">90%</span>
             </div>
-            
+
             <div class="skill-card" data-skill="css">
               <div class="skill-icon">
                 <i class="fab fa-css3-alt"></i>
@@ -227,7 +255,7 @@
               </div>
               <span class="skill-percentage">85%</span>
             </div>
-            
+
             <div class="skill-card" data-skill="javascript">
               <div class="skill-icon">
                 <i class="fab fa-js-square"></i>
@@ -239,7 +267,19 @@
               </div>
               <span class="skill-percentage">80%</span>
             </div>
-            
+
+            <div class="skill-card" data-skill="wordpress">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h3>React</h3>
+              <p>Building dynamic, reusable components and responsive UIs</p>
+              <div class="skill-level">
+                <div class="level-bar" data-level="60"></div>
+              </div>
+              <span class="skill-percentage">60%</span>
+            </div>
+
             <div class="skill-card" data-skill="nodejs">
               <div class="skill-icon">
                 <i class="fab fa-node-js"></i>
@@ -251,7 +291,31 @@
               </div>
               <span class="skill-percentage">70%</span>
             </div>
-            
+
+            <div class="skill-card" data-skill="database">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>SQL & noSQL</h3>
+              <p>Database design with PostgreSQL and MongoDB</p>
+              <div class="skill-level">
+                <div class="level-bar" data-level="75"></div>
+              </div>
+              <span class="skill-percentage">75%</span>
+            </div>
+
+            <div class="skill-card" data-skill="docker">
+              <div class="skill-icon">
+                <i class="fa-brands fa-docker"></i>
+              </div>
+              <h3>Docker</h3>
+              <p>Containerization and orchestration</p>
+              <div class="skill-level">
+                <div class="level-bar" data-level="70"></div>
+              </div>
+              <span class="skill-percentage">70%</span>
+            </div>
+
             <div class="skill-card" data-skill="git">
               <div class="skill-icon">
                 <i class="fab fa-git-alt"></i>
@@ -263,19 +327,7 @@
               </div>
               <span class="skill-percentage">85%</span>
             </div>
-            
-            <div class="skill-card" data-skill="wordpress">
-              <div class="skill-icon">
-                <i class="fab fa-wordpress"></i>
-              </div>
-              <h3>WordPress</h3>
-              <p>Content management and custom themes</p>
-              <div class="skill-level">
-                <div class="level-bar" data-level="80"></div>
-              </div>
-              <span class="skill-percentage">80%</span>
-            </div>
-            
+
             <div class="skill-card" data-skill="figma">
               <div class="skill-icon">
                 <i class="fab fa-figma"></i>
@@ -286,18 +338,6 @@
                 <div class="level-bar" data-level="70"></div>
               </div>
               <span class="skill-percentage">70%</span>
-            </div>
-            
-            <div class="skill-card" data-skill="database">
-              <div class="skill-icon">
-                <i class="fas fa-database"></i>
-              </div>
-              <h3>SQL</h3>
-              <p>Database design and management</p>
-              <div class="skill-level">
-                <div class="level-bar" data-level="75"></div>
-              </div>
-              <span class="skill-percentage">75%</span>
             </div>
           </div>
         </div>
@@ -315,64 +355,74 @@
               A showcase of my recent work and creative solutions
             </p>
           </div>
-          
+
           <div class="projects-showcase">
             <!-- Featured Project -->
             <div class="project-featured">
               <div class="project-visual">
                 <div class="project-icon-large">
-                  <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-leaf"></i>
                 </div>
                 <div class="project-glow"></div>
               </div>
               <div class="project-info">
                 <div class="project-badge">Featured Project</div>
-                <h3>E-Commerce Platform</h3>
+                <h3>Carbon Footprint Tracker</h3>
                 <p>
-                  A comprehensive e-commerce solution built with modern web technologies. 
-                  Features include user authentication, payment processing, inventory management, 
-                  and a responsive design that works seamlessly across all devices.
+                  A web app that helps users estimate and track their carbon
+                  footprint from daily activities. Built with HTML, CSS, and
+                  JavaScript, it features interactive forms, real-time
+                  calculations, and a clean, responsive UI for eco-conscious
+                  living.
                 </p>
                 <div class="project-tech">
                   <span class="tech-tag">
-                    <i class="fab fa-wordpress"></i>
-                    WordPress
-                  </span>
-                  <span class="tech-tag">
-                    <i class="fab fa-elementor"></i>
-                    Elementor
+                    <i class="fab fa-html5"></i>
+                    HTML5
                   </span>
                   <span class="tech-tag">
                     <i class="fab fa-css3-alt"></i>
                     CSS3
                   </span>
+                  <span class="tech-tag">
+                    <i class="fab fa-js-square"></i>
+                    JavaScript
+                  </span>
                 </div>
                 <div class="project-links">
-                  <a href="https://techservy.com/" class="project-btn primary">
+                  <a
+                    href="https://sulaiman001221.github.io/carbon-footprint-tracker/"
+                    class="project-btn primary"
+                  >
                     <i class="fas fa-external-link-alt"></i>
                     Live Demo
                   </a>
-                  <a href="#" class="project-btn secondary">
-                    <i class="fas fa-info-circle"></i>
-                    Case Study
+                  <a
+                    href="https://github.com/sulaiman001221/github-dependency-checker"
+                    class="project-btn secondary"
+                  >
+                    <i class="fab fa-github"></i>
+                    GitHub Repo
                   </a>
                 </div>
               </div>
             </div>
-            
+
             <!-- Regular Projects Grid -->
             <div class="projects-grid">
               <div class="project-card">
                 <div class="project-header">
                   <div class="project-icon">
-                    <i class="fas fa-brain"></i>
+                    <i class="fa-brands fa-github"></i>
                   </div>
                   <div class="project-status completed">Completed</div>
                 </div>
-                <h3>Memory Game</h3>
+                <h3>GitHub Dependency Checker</h3>
                 <p>
-                  An interactive memory card game with real-time feedback and scoring system. 
-                  Built using vanilla JavaScript with a focus on clean code and user experience.
+                  A web app that checks for outdated and up-to-date dependencies
+                  in any public GitHub repository. Enter a repo URL or
+                  owner/name to instantly see the status of dependencies. Built
+                  with HTML, CSS, JavaScript, and Express.js.
                 </p>
                 <div class="project-tech">
                   <span class="tech-tag">
@@ -387,64 +437,91 @@
                     <i class="fab fa-js-square"></i>
                     JavaScript
                   </span>
-                </div>
-                <div class="project-links">
-                  <a href="https://github.com/sulaiman001221/memory-game" class="project-link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://sulaiman001221.github.io/memory-game/" class="project-link">
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </div>
-              </div>
-              
-              <div class="project-card">
-                <div class="project-header">
-                  <div class="project-icon">
-                    <i class="fas fa-music"></i>
-                  </div>
-                  <div class="project-status completed">Completed</div>
-                </div>
-                <h3>Semitone Music App</h3>
-                <p>
-                  A music education tool for practicing note distances with real-time feedback 
-                  and streak tracking. Developed using test-driven development principles.
-                </p>
-                <div class="project-tech">
                   <span class="tech-tag">
-                    <i class="fab fa-html5"></i>
-                    HTML5
-                  </span>
-                  <span class="tech-tag">
-                    <i class="fab fa-css3-alt"></i>
-                    CSS3
-                  </span>
-                  <span class="tech-tag">
-                    <i class="fab fa-js-square"></i>
-                    JavaScript
+                    <i class="fab fa-node-js"></i>
+                    Express.js
                   </span>
                 </div>
                 <div class="project-links">
-                  <a href="https://github.com/sulaiman001221/semitone-game" class="project-link">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a href="https://sulaiman001221.github.io/semitone-game/" class="project-link">
+                  <a
+                    href="https://github-dependency-checker.onrender.com/"
+                    class="project-link"
+                  >
                     <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/sulaiman001221/github-dependency-checker"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
                   </a>
                 </div>
               </div>
-              
+
               <div class="project-card">
                 <div class="project-header">
                   <div class="project-icon">
-                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-seedling"></i>
                   </div>
                   <div class="project-status in-progress">In Progress</div>
                 </div>
-                <h3>Portfolio Website</h3>
+                <h3>Paradise Nursery E-commerce</h3>
                 <p>
-                  A modern, responsive portfolio showcasing my work and skills. Features 
-                  smooth animations, dark/light mode, and optimized performance.
+                  An e-commerce plant nursery website built with Vite and React.
+                  Browse, search, and shop for a variety of plants with a
+                  modern, responsive UI. The project is still in progress.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">
+                    <i class="fab fa-react"></i>
+                    React
+                  </span>
+                  <span class="tech-tag">
+                    <i class="fab fa-js-square"></i>
+                    JavaScript
+                  </span>
+                  <span class="tech-tag">
+                    <i class="fab fa-html5"></i>
+                    HTML5
+                  </span>
+                  <span class="tech-tag">
+                    <i class="fab fa-css3-alt"></i>
+                    CSS3
+                  </span>
+                  <span class="tech-tag">
+                    <i class="fas fa-bolt"></i>
+                    Vite
+                  </span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://sulaiman001221.github.io/paradise-nursery/"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/sulaiman001221/paradise-nursery"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-header">
+                  <div class="project-icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <div class="project-status in-progress">In Progress</div>
+                </div>
+                <h3>Travel Website Dashboard</h3>
+                <p>
+                  A travel dashboard that lets you search popular destinations
+                  around the world, featuring a smart search helper for quick
+                  discovery. Built with HTML, CSS, and JavaScript for a seamless
+                  and interactive user experience.
                 </p>
                 <div class="project-tech">
                   <span class="tech-tag">
@@ -461,17 +538,23 @@
                   </span>
                 </div>
                 <div class="project-links">
-                  <a href="#" class="project-link">
-                    <i class="fab fa-github"></i>
+                  <a
+                    href="https://sulaiman001221.github.io/travel-app/"
+                    class="project-link"
+                  >
+                    <i class="fas fa-external-link-alt"></i>
                   </a>
-                  <a href="#" class="project-link disabled">
-                    <i class="fas fa-clock"></i>
+                  <a
+                    href="https://github.com/sulaiman001221/travel-app"
+                    class="project-link"
+                  >
+                    <i class="fab fa-github"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <div class="projects-cta">
             <a href="./sections/projects/projects.html" class="view-all-btn">
               <span>View All Projects</span>
@@ -494,7 +577,7 @@
               Ready to bring your ideas to life? Let's start a conversation
             </p>
           </div>
-          
+
           <div class="contact-content">
             <div class="contact-info">
               <div class="contact-card">
@@ -507,7 +590,7 @@
                   sulaimanndlovu@gmail.com
                 </a>
               </div>
-              
+
               <div class="contact-card">
                 <div class="contact-icon">
                   <i class="fas fa-phone"></i>
@@ -518,7 +601,7 @@
                   +27 66 335 2002
                 </a>
               </div>
-              
+
               <div class="contact-card">
                 <div class="contact-icon">
                   <i class="fab fa-whatsapp"></i>
@@ -529,19 +612,22 @@
                   Start Chat
                 </a>
               </div>
-              
+
               <div class="contact-card">
                 <div class="contact-icon">
                   <i class="fab fa-linkedin"></i>
                 </div>
                 <h3>LinkedIn</h3>
                 <p>Connect with me professionally</p>
-                <a href="https://linkedin.com/in/sulaiman001221" class="contact-link">
+                <a
+                  href="https://linkedin.com/in/sulaiman001221"
+                  class="contact-link"
+                >
                   Connect Now
                 </a>
               </div>
             </div>
-            
+
             <div class="contact-visual">
               <div class="contact-animation">
                 <div class="message-bubble bubble-1">
@@ -565,26 +651,46 @@
         <div class="footer-left">
           <p>&copy; 2025 Sulaiman Ndlovu. All rights reserved.</p>
         </div>
-        
+
         <div class="footer-right">
           <div class="social-links">
-            <a href="https://github.com/sulaiman001221" target="_blank" class="social-link">
+            <a
+              href="https://github.com/sulaiman001221"
+              target="_blank"
+              class="social-link"
+            >
               <i class="fab fa-github"></i>
             </a>
-            <a href="https://linkedin.com/in/sulaiman001221" target="_blank" class="social-link">
+            <a
+              href="https://linkedin.com/in/sulaiman001221"
+              target="_blank"
+              class="social-link"
+            >
               <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://wa.me/+27663352002" target="_blank" class="social-link">
+            <a
+              href="https://wa.me/+27663352002"
+              target="_blank"
+              class="social-link"
+            >
               <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="mailto:sulaimanndlovu@gmail.com" target="_blank" class="social-link">
+            <a
+              href="mailto:sulaimanndlovu@gmail.com"
+              target="_blank"
+              class="social-link"
+            >
               <i class="fas fa-envelope"></i>
             </a>
             <a href="tel:+27663352002" target="_blank" class="social-link">
               <i class="fas fa-phone"></i>
             </a>
           </div>
-          <a href="./Images/SULAIMAN_NDLOVU_CV.pdf" target="_blank" class="cv-link">
+          <a
+            href="./Images/SULAIMAN_NDLOVU_CV.pdf"
+            target="_blank"
+            class="cv-link"
+          >
             <i class="fas fa-download"></i>
             Download CV
           </a>

@@ -6,15 +6,15 @@
     gap: 60px;
     padding: 0 30px;
   }
-  
+
   .hero-title {
     font-size: 3.5rem;
   }
-  
+
   .section-container {
     padding: 80px 30px;
   }
-  
+
   .project-featured {
     padding: 40px 30px;
   }
@@ -25,7 +25,7 @@
   /* ===== HEADER & NAVIGATION ===== */
   .top-bar {
     position: fixed;
-    top: 70px;
+    top: 70px; /* below mobile header */
     left: -100%;
     width: 100%;
     height: calc(100vh - 70px);
@@ -38,30 +38,30 @@
     transition: left 0.3s ease;
     z-index: 999;
   }
-  
+
   .top-bar.active {
     left: 0;
   }
-  
+
   .top-bar ul {
     flex-direction: column;
     gap: 40px;
     align-items: center;
   }
-  
+
   .top-bar ul li a {
     font-size: 1.2rem;
     padding: 10px 20px;
   }
-  
+
   .mobile-top-bar {
     display: flex;
   }
-  
+
   .ham-menu {
     display: block;
   }
-  
+
   /* Logo mobile adjustments */
   .logo a {
     width: 45px;
@@ -77,55 +77,55 @@
     padding: 120px 20px 60px;
     min-height: calc(100vh - 70px);
   }
-  
+
   .hero-title {
     font-size: 2.8rem;
     margin-bottom: 25px;
   }
-  
+
   .hero-description {
     font-size: 1.1rem;
     margin-bottom: 35px;
   }
-  
+
   .hero-stats {
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
     margin-bottom: 40px;
   }
-  
+
   .stat-item {
     min-width: 120px;
   }
-  
+
   .stat-number {
     font-size: 2.2rem;
   }
-  
+
   .hero-actions {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
   }
-  
+
   .cta-btn {
     padding: 14px 28px;
     font-size: 0.95rem;
     min-width: 160px;
   }
-  
+
   /* Code editor mobile */
   .code-editor {
     max-width: 100%;
     margin: 20px 0;
   }
-  
+
   .editor-content {
     padding: 15px;
     font-size: 0.85rem;
   }
-  
+
   .floating-tech {
     font-size: 1.8rem;
   }
@@ -134,18 +134,18 @@
   .section-container {
     padding: 60px 20px;
   }
-  
+
   .section-title {
     font-size: 2.2rem;
     flex-direction: column;
     gap: 15px;
     margin-bottom: 60px;
   }
-  
+
   .title-icon {
     font-size: 2.2rem;
   }
-  
+
   .section-subtitle {
     font-size: 1.05rem;
   }
@@ -155,11 +155,11 @@
     grid-template-columns: 1fr;
     gap: 25px;
   }
-  
+
   .skill-card {
     padding: 30px 25px;
   }
-  
+
   .skill-icon {
     width: 70px;
     height: 70px;
@@ -171,50 +171,50 @@
     grid-template-columns: 1fr;
     gap: 25px;
   }
-  
+
   .project-featured {
     grid-template-columns: 1fr;
     gap: 35px;
     padding: 35px 25px;
     margin-bottom: 50px;
   }
-  
+
   .project-info h3 {
     font-size: 2.2rem;
     margin-bottom: 20px;
   }
-  
+
   .project-icon-large {
     width: 160px;
     height: 160px;
     font-size: 3.5rem;
   }
-  
+
   .project-tech {
     gap: 10px;
     margin-bottom: 25px;
   }
-  
+
   .tech-tag {
     font-size: 0.85rem;
     padding: 8px 14px;
   }
-  
+
   .project-links {
     flex-direction: column;
     gap: 12px;
   }
-  
+
   .project-btn {
     justify-content: center;
     width: 100%;
     padding: 14px 24px;
   }
-  
+
   .project-card {
     padding: 25px;
   }
-  
+
   .project-card .project-links {
     flex-direction: row;
     justify-content: center;
@@ -226,16 +226,16 @@
     grid-template-columns: 1fr;
     gap: 50px;
   }
-  
+
   .contact-info {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-  
+
   .contact-card {
     padding: 25px;
   }
-  
+
   .contact-icon {
     width: 55px;
     height: 55px;
@@ -249,12 +249,12 @@
     gap: 25px;
     padding: 0 20px;
   }
-  
+
   .footer-right {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .social-links {
     justify-content: center;
   }
@@ -264,38 +264,38 @@
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
+
   .animated-title h1 {
     font-size: 2.8rem;
   }
-  
+
   .animated-title h2 {
     font-size: 1.6rem;
   }
-  
+
   .profile-card {
     padding: 35px 25px;
   }
-  
+
   .image-placeholder {
     width: 130px;
     height: 130px;
     font-size: 2.8rem;
   }
-  
+
   .skills-categories {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .skill-category {
     padding: 30px 25px;
   }
-  
+
   .timeline::before {
     left: 25px;
   }
-  
+
   .timeline-item:nth-child(odd) .timeline-content,
   .timeline-item:nth-child(even) .timeline-content {
     margin-left: 55px;
@@ -304,50 +304,50 @@
     padding-right: 25px;
     text-align: left;
   }
-  
+
   .timeline-marker {
     left: 25px;
   }
-  
+
   .interests-grid {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-  
+
   .interest-card {
     padding: 30px 25px;
   }
-  
+
   .interest-icon {
     width: 65px;
     height: 65px;
     font-size: 1.4rem;
   }
-  
+
   .facts-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
   }
-  
+
   .fact-card {
     padding: 30px 20px;
   }
-  
+
   .philosophy-grid {
     grid-template-columns: 1fr;
     gap: 25px;
   }
-  
+
   .philosophy-card {
     padding: 30px 25px;
   }
-  
+
   .philosophy-icon {
     width: 65px;
     height: 65px;
     font-size: 1.4rem;
   }
-  
+
   .code-snippet {
     margin: 0 20px;
   }
@@ -357,46 +357,46 @@
     min-height: 60vh;
     padding-top: 120px;
   }
-  
+
   .projects-hero .hero-title {
     font-size: 2.8rem;
   }
-  
+
   .project-filters {
     justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
   }
-  
+
   .filter-btn {
     padding: 10px 18px;
     font-size: 0.9rem;
     min-width: 120px;
   }
-  
+
   .project-card.featured {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 20px;
   }
-  
+
   .project-image {
     height: 180px;
   }
-  
+
   .project-stats {
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
   }
-  
+
   .stat-card {
     padding: 30px 20px;
   }
-  
+
   .stat-icon {
     width: 55px;
     height: 55px;
@@ -410,63 +410,67 @@
   .hero-container {
     padding: 100px 15px 50px;
   }
-  
+
   .hero-title {
     font-size: 2.2rem;
     line-height: 1.2;
   }
-  
+
   .hero-description {
     font-size: 1rem;
   }
-  
+
   .hero-stats {
     gap: 20px;
   }
-  
+
   .stat-number {
     font-size: 1.8rem;
   }
-  
+
   .stat-label {
     font-size: 0.85rem;
   }
-  
+
   .cta-btn {
     padding: 12px 24px;
     font-size: 0.9rem;
     min-width: 140px;
   }
 
+  .scroll-indicator {
+    display: none;
+  }
+
   /* ===== SECTIONS ===== */
   .section-title {
     font-size: 1.8rem;
   }
-  
+
   .section-container {
     padding: 50px 15px;
   }
-  
+
   .skill-card,
   .project-card,
   .contact-card {
     padding: 20px;
   }
-  
+
   .project-featured {
     padding: 25px 15px;
   }
-  
+
   .project-info h3 {
     font-size: 1.8rem;
   }
-  
+
   .project-icon-large {
     width: 130px;
     height: 130px;
     font-size: 3rem;
   }
-  
+
   .view-all-btn {
     padding: 12px 30px;
     font-size: 0.9rem;
@@ -476,11 +480,11 @@
   .animated-title h1 {
     font-size: 2.2rem;
   }
-  
+
   .animated-title h2 {
     font-size: 1.4rem;
   }
-  
+
   .facts-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -490,17 +494,17 @@
   .projects-hero .hero-title {
     font-size: 2.2rem;
   }
-  
+
   .stats-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .project-filters {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .filter-btn {
     width: 100%;
     max-width: 200px;
@@ -515,15 +519,15 @@
     min-height: auto;
     padding: 90px 0 40px;
   }
-  
+
   .hero-title {
     font-size: 2.2rem;
   }
-  
+
   .hero-stats {
     margin-bottom: 25px;
   }
-  
+
   .scroll-indicator {
     display: none;
   }
@@ -541,19 +545,19 @@
     transform: none;
     box-shadow: none;
   }
-  
+
   .skill-card:active,
   .project-card:active,
   .contact-card:active {
     transform: scale(0.98);
   }
-  
+
   .cta-btn:hover,
   .project-btn:hover,
   .view-all-btn:hover {
     transform: none;
   }
-  
+
   .cta-btn:active,
   .project-btn:active,
   .view-all-btn:active {
@@ -570,7 +574,7 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-  
+
   .floating-tech,
   .floating-icon,
   .message-bubble,
@@ -587,7 +591,7 @@
   .contact-card {
     border-width: 2px;
   }
-  
+
   .cta-btn,
   .project-btn {
     border: 2px solid currentColor;

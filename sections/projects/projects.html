@@ -6,7 +6,7 @@
     <title>Projects - Sulaiman Ndlovu</title>
     <link rel="stylesheet" href="../../main-styles/style.css" />
     <link rel="stylesheet" href="../../responsiveness/mobile-style.css" />
-    <link rel="stylesheet" href="./projects.css">
+    <link rel="stylesheet" href="./projects.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -28,15 +28,22 @@
     <!-- Header with Animated Navigation -->
     <header class="menu">
       <nav class="top-bar">
-        <div class="logo">
-          <a href="../../index.html">SN</a>
-        </div>
         <ul>
           <li><a href="../../index.html" class="menu-link">HOME</a></li>
-          <li><a href="../../about.html" class="menu-link">ABOUT</a></li>
-          <li><a href="../../index.html#skills" class="menu-link">SKILLS</a></li>
-          <li><a href="../../sections/projects/projects.html" class="menu-link active">PROJECTS</a></li>
-          <li><a href="../../index.html#contact" class="menu-link">CONTACT</a></li>
+          <li><a href="../about/about.html" class="menu-link">ABOUT</a></li>
+          <li>
+            <a href="../../index.html#skills" class="menu-link">SKILLS</a>
+          </li>
+          <li>
+            <a
+              href="../../sections/projects/projects.html"
+              class="menu-link active"
+              >PROJECTS</a
+            >
+          </li>
+          <li>
+            <a href="../../index.html#contact" class="menu-link">CONTACT</a>
+          </li>
         </ul>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
           <i class="fas fa-sun" id="themeIcon"></i>
@@ -98,52 +105,47 @@
       <section class="projects-section">
         <div class="section-container">
           <div class="projects-grid">
-            <!-- E-Commerce Platform -->
-            <div class="project-card featured" data-category="completed">
+            <!-- Featured Project: Carbon Footprint Tracker -->
+            <div class="project-card" data-category="completed">
               <div class="project-image">
-                <div class="project-icon-large">
-                  <i class="fas fa-shopping-cart"></i>
+                <div class="project-icon">
+                  <i class="fas fa-leaf"></i>
                 </div>
                 <div class="project-overlay">
                   <div class="project-links">
                     <a
-                      href="https://techservy.com/"
+                      href="https://sulaiman001221.github.io/carbon-footprint-tracker/"
                       class="project-link"
                       target="_blank"
                     >
                       <i class="fas fa-external-link-alt"></i>
                     </a>
-                    <a href="#" class="project-link">
-                      <i class="fas fa-info-circle"></i>
+                    <a
+                      href="https://github.com/sulaiman001221/github-dependency-checker"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
                     </a>
                   </div>
                 </div>
               </div>
               <div class="project-content">
                 <div class="project-header">
-                  <h3>E-Commerce Platform</h3>
+                  <h3>Carbon Footprint Tracker</h3>
                   <span class="project-status completed">Completed</span>
                 </div>
                 <p class="project-description">
-                  A comprehensive e-commerce solution built with WordPress and
-                  Elementor. Features include product catalog, shopping cart,
-                  payment processing, and responsive design.
+                  A web app that helps users estimate and track their carbon
+                  footprint from daily activities. Built with HTML, CSS, and
+                  JavaScript, it features interactive forms, real-time
+                  calculations, and a clean, responsive UI for eco-conscious
+                  living.
                 </p>
                 <div class="project-tech">
-                  <span class="tech-tag">WordPress</span>
-                  <span class="tech-tag">Elementor</span>
+                  <span class="tech-tag">HTML5</span>
                   <span class="tech-tag">CSS3</span>
                   <span class="tech-tag">JavaScript</span>
-                </div>
-                <div class="project-stats">
-                  <div class="stat">
-                    <span class="stat-label">Duration:</span>
-                    <span class="stat-value">3 months</span>
-                  </div>
-                  <div class="stat">
-                    <span class="stat-label">Type:</span>
-                    <span class="stat-value">E-Commerce</span>
-                  </div>
                 </div>
               </div>
             </div>
@@ -231,6 +233,51 @@
                   <span class="tech-tag">CSS3</span>
                   <span class="tech-tag">JavaScript</span>
                   <span class="tech-tag">TDD</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- GitHub Dependency Checker -->
+            <div class="project-card" data-category="completed">
+              <div class="project-image">
+                <div class="project-icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github-dependency-checker.onrender.com/"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="https://github.com/sulaiman001221/github-dependency-checker"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>GitHub Dependency Checker</h3>
+                  <span class="project-status completed">Completed</span>
+                </div>
+                <p class="project-description">
+                  A web app that checks for outdated and up-to-date dependencies
+                  in any public GitHub repository. Enter a repo URL or
+                  owner/name to instantly see the status of dependencies. Built
+                  with HTML, CSS, JavaScript, and Express.js.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Express.js</span>
                 </div>
               </div>
             </div>
@@ -399,6 +446,95 @@
                 </div>
               </div>
             </div>
+
+            <!-- Paradise Nursery E-commerce -->
+            <div class="project-card" data-category="in-progress">
+              <div class="project-image">
+                <div class="project-icon">
+                  <i class="fas fa-seedling"></i>
+                </div>
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://sulaiman001221.github.io/paradise-nursery/"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="https://github.com/sulaiman001221/paradise-nursery"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Paradise Nursery E-commerce</h3>
+                  <span class="project-status in-progress">In Progress</span>
+                </div>
+                <p class="project-description">
+                  An e-commerce plant nursery website built with Vite and React.
+                  Browse, search, and shop for a variety of plants with a
+                  modern, responsive UI. The project is still in progress.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">Vite</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Travel Website Dashboard -->
+            <div class="project-card" data-category="in-progress">
+              <div class="project-image">
+                <div class="project-icon">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://sulaiman001221.github.io/travel-app/"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a
+                      href="https://github.com/sulaiman001221/travel-app"
+                      class="project-link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-header">
+                  <h3>Travel Website Dashboard</h3>
+                  <span class="project-status in-progress">In Progress</span>
+                </div>
+                <p class="project-description">
+                  A travel dashboard that lets you search popular destinations
+                  around the world, featuring a smart search helper for quick
+                  discovery. Built with HTML, CSS, and JavaScript for a seamless
+                  and interactive user experience.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -413,7 +549,7 @@
               <div class="stat-icon">
                 <i class="fas fa-check-circle"></i>
               </div>
-              <div class="stat-number">3</div>
+              <div class="stat-number">4</div>
               <div class="stat-label">Completed Projects</div>
             </div>
 
@@ -421,7 +557,7 @@
               <div class="stat-icon">
                 <i class="fas fa-code"></i>
               </div>
-              <div class="stat-number">8+</div>
+              <div class="stat-number">10+</div>
               <div class="stat-label">Technologies Used</div>
             </div>
 
@@ -437,7 +573,7 @@
               <div class="stat-icon">
                 <i class="fas fa-lightbulb"></i>
               </div>
-              <div class="stat-number">5</div>
+              <div class="stat-number">4</div>
               <div class="stat-label">Upcoming Projects</div>
             </div>
           </div>

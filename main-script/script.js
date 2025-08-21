@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(bar);
     });
   }
-  
+
   // Skill cards animation on scroll
   function animateSkillCards() {
     const skillCards = document.querySelectorAll(".skill-card");
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(card);
     });
   }
-  
+
   // Add CSS for rainbow animation
   const style = document.createElement("style");
   style.textContent = `
@@ -166,9 +166,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize all animations
   animateCounters();
   animateSkillBars();
-  animateTimeline();
-  animatePhilosophyCards();
-  animateCodeSnippet();
   animateSkillCards();
 
   // Page-specific initializations
