@@ -320,61 +320,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Easter egg: Konami code
-  // let konamiCode = [];
-  // const konamiSequence = [
-  //   "ArrowUp",
-  //   "ArrowUp",
-  //   "ArrowDown",
-  //   "ArrowDown",
-  //   "ArrowLeft",
-  //   "ArrowRight",
-  //   "ArrowLeft",
-  //   "ArrowRight",
-  //   "KeyB",
-  //   "KeyA",
-  // ];
-
-  // document.addEventListener("keydown", function (e) {
-  //   konamiCode.push(e.code);
-
-  //   if (konamiCode.length > konamiSequence.length) {
-  //     konamiCode.shift();
-  //   }
-
-  //   if (konamiCode.join(",") === konamiSequence.join(",")) {
-  //     // Easter egg activated!
-  //     document.body.style.animation = "rainbow 2s infinite";
-  //     setTimeout(() => {
-  //       document.body.style.animation = "";
-  //     }, 5000);
-
-  //     // Show a fun message
-  //     const message = document.createElement("div");
-  //     message.textContent = "🎉 You found the easter egg! 🎉";
-  //     message.style.cssText = `
-  //       position: fixed;
-  //       top: 50%;
-  //       left: 50%;
-  //       transform: translate(-50%, -50%);
-  //       background: var(--accent-color);
-  //       color: white;
-  //       padding: 20px;
-  //       border-radius: 10px;
-  //       font-size: 1.2rem;
-  //       z-index: 9999;
-  //       animation: bounce 1s ease;
-  //     `;
-  //     document.body.appendChild(message);
-
-  //     setTimeout(() => {
-  //       message.remove();
-  //     }, 3000);
-
-  //     konamiCode = [];
-  //   }
-  // });
-
   // Add CSS for rainbow animation
   const style = document.createElement("style");
   style.textContent = `
